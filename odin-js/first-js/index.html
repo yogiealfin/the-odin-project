@@ -41,14 +41,78 @@
       // const percentage = actual / max;
       // console.log(percentage);
 
-      // test
-      const game = "Final Fantasy X";
-      const score = 9;
-      const maxScore = 10;
-      const output = `I like this game called ${game}. I gave it a score of ${
-        (score / maxScore) * 100
-      }\ndo you love this game too?`;
-      console.log(output);
+      // Template Literal
+      // const game = "Final Fantasy X";
+      // const score = 9;
+      // const maxScore = 10;
+      // const output = `I like this game called ${game}. I gave it a score of ${
+      //   (score / maxScore) * 100
+      // }\ndo you love this game too?`;
+      // console.log(output);
+
+      // String Methode
+
+      // lenght => menghitung panjang string
+      // let text = "Final Fantasy";
+      // let length = text.length;
+      // console.log(length);
+
+      // slice => Mengambil potongan huruf (Memiliki 2 parameter awal dan akhir)
+      // let text = "Final Fantasy X";
+      // let part = text.slice(6, 13);
+      // console.log(part); // => Hasil output fantasy
+
+      // substr => 2 parameter (start, panjang yang mau diambil)
+      // let text = "Final Fantasy X";
+      // let part = text.substr(6, 7);
+      // console.log(part); // => hasil output fantasy
+
+      // replace => Mengganti sebuah string(case sensitif => gunakan /string/i untuk menjadi insensitif)
+      // hanya string pertama yang sama yang akan diganti => gunakan /sting/g untuk mengubah semua)
+      // let text = "Final Fantasy";
+      // let replacement = text.replace("Fantasy", "Destination");
+      // console.log(replacement); //=> hasil output Final Destination
+
+      // replaceAll => Mengganti semua string yang sama (Tidak bekerja pada IE)
+      // let text =
+      //   "Aku suka anjing, anjing berwarna putih, anjing berbulu panjang";
+      // let replacement = text.replaceAll("anjing", "kucing");
+      // console.log(replacement);
+
+      // toLowerCase => mengubah string menjadi lowercase
+      // let text = "Final Destination";
+      // let lowerCase = text.toLowerCase();
+      // console.log(lowerCase); //=> hasil output final destination
+
+      // toUpperCase => mengubah string menjadi uppercase
+      // let text = "Final Destination";
+      // let upperCase = text.toUpperCase();
+      // console.log(upperCase); //=> hasil output FINAL DESTINATION
+
+      // trim => menghilangkan whitespace => trimStart untuk whitespace depan trimEnd belakang
+      // let text = "       Hello World      ";
+      // let trim = text.trim();
+      // console.log(trim); //=> hasil output Hello World
+
+      // charAt => mengambil karakter pada index yang diinginkan
+      // let text = "Hello World";
+      // let char = text.charAt(0);
+      // console.log(char); // => hasil output H
+
+      // cara lain mengambil karakter pada index tertnetu dengan []
+      // let text = "Hello World";
+      // let index = text[0];
+      // console.log(index); // => hasil output H
+
+      // split => mengubah string menjadi array bisa dengan split(",") split(" "), split("")
+      // let text = "Hello World";
+      // let split = text.split("");
+      // console.log(split[2]); // => hasil output l
+
+      const s1 = "2+2";
+      const s2 = new String("2+2");
+      console.log(eval(s1));
+      console.log(eval(s2));
     </script>
   </body>
 </html>
