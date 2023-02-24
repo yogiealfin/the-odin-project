@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional</title>
+  </head>
+  <body>
+    <label for="weather">Select weather for today : </label>
+    <select name="weather" id="weather">
+      <option value="">-- Make a choice --</option>
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="snowing">Snowing</option>
+    </select>
+
+    <p></p>
+    <script>
+      // mengecek jam
+      // if (new Date().getHours() < 20) {
+      //   greeting = "Good Evening";
+      // } else if (new Date().getHours() < 12) {
+      //   greeting = "Good Morning";
+      // } else {
+      //   greeting = "Good Night";
+      // }
+      // console.log(greeting);
+
+      // Mengecek cuaca
+      // const select = document.querySelector("select");
+      // const para = document.querySelector("p");
+
+      // select.addEventListener("change", setWeather);
+
+      // conditional if, else if, else
+      // function setWeather() {
+      //   const choice = select.value;
+      //   const temperature = 26;
+
+      //   if (choice == "sunny") {
+      //     if (temperature < 30) {
+      //       para.textContent = `It is ${temperature} degree Celcius, nice and sunny outside today. Go to the beach, or the park, and get an ice cream.`;
+      //     } else if (temperature >= 30) {
+      //       para.textContent = `It is ${temperature} degrees Celcius outside — REALLY HOT! If you want to go outside, make sure to put some sunscreen on.`;
+      //     }
+      //   } else if (choice == "rainy") {
+      //     para.textContent =
+      //       "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+      //   } else if (choice == "snowing") {
+      //     para.textContent =
+      //       "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+      //   } else {
+      //     para.textContent = "";
+      //   }
+      // }
+
+      // switch case
+      // function setWeather() {
+      //   const choice = select.value;
+
+      //   switch (choice) {
+      //     case "sunny":
+      //       para.textContent =
+      //         "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+      //       break;
+      //     case "rainy":
+      //       para.textContent =
+      //         "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+      //       break;
+      //     case "snowing":
+      //       para.textContent =
+      //         "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+      //       break;
+      //     default:
+      //       para.textContent = "";
+      //   }
+      // }
+
+      // ternary operator => condition? run this code : run this code if false
+    </script>
+  </body>
+</html>
